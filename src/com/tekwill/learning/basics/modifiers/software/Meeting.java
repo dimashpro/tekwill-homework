@@ -1,4 +1,4 @@
-package md.modifiers.software;
+package com.tekwill.learning.basics.modifiers.software;
 
 public class Meeting {
     private Employee employee;
@@ -7,13 +7,17 @@ public class Meeting {
         employee.firstName = "Sergiu";  //+++
         // doWork();                       //---
         employee.doWork();              //+++
-        //inheritedAccesFirstName = "Sergiu"; //---
-        employee.inheritedAccesFirstName = "Sergiu";  //+++
+        //protectedFirstName = "Sergiu"; //---
+        employee.protectedFirstName = "Sergiu";  //+++
         //doProtectedWork();              //---
         employee.doProtectedWork();     //+++
-        //limitedAccesFirstName = "Sergiu"; //---
-        //employee.limitedAccesFirstName = "Sergiu";   //---
+        //privateFirstName = "Sergiu"; //---
+        //employee.privateFirstName = "Sergiu";   //---
        // doPrivateWork();            //---
        // employee.doPrivateWork();     //---
+       //  defaultFirstName = "Sergiu";   //---
+        employee.defaultFirstName = "Sergiu";  //+++
+        // doDefaultWork();          //---
+        employee.doDefaultWork();  //+++
     }
 }
