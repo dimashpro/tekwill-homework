@@ -19,5 +19,6 @@ public class Meeting {
         employee.defaultFirstName = "Sergiu";  //+++
         // doDefaultWork();          //---
         employee.doDefaultWork();  //+++
+        
     }
 }
