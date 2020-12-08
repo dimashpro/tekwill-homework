@@ -8,7 +8,7 @@ public class Knight {
         System.out.println("Fight");
     }
     public static void invokeMagic(){
-        System.out.println("Maaaaaagic")
+        System.out.println("Maaaaaagic");
     }
 
     public Knight(int age, String nickname) {
@@ -20,7 +20,7 @@ public class Knight {
     public String toString() {
         return "Knight{" +
                 "age=" + age +
-                "years, nickname='" + nickname + '\'' +
+                " years, nickname='" + nickname + '\'' +
                 '}';
     }
 }
