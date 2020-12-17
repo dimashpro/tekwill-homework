@@ -52,7 +52,14 @@ public class FormattingParameters {
         System.out.printf("|%-20s",s8);
         System.out.println("||");
         System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
-        System.out.printf("||%,20d",totalTaxRevenue1);
+        System.out.printf("||%," +
+                "" +
+                "" +
+                "" +
+                "" +
+                "" +
+                "" +
+                "20d",totalTaxRevenue1);
         System.out.printf("|%20d",property1);
         System.out.printf("|%20d",income1);
         System.out.printf("|%20f",sales1);
