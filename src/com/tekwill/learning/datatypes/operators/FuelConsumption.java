@@ -2,7 +2,7 @@ package com.tekwill.learning.datatypes.operators;
 
 import java.util.Scanner;
 
-public class ConvertFuelDistance {
+public class FuelConsumption {
     public static final double LITERS_IN_A_GALLON = 3.875;
     public static final double MILES_IN_ONE_HUNDRED_KILOMETERS_ = 62.14;
 
