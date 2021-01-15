@@ -4,8 +4,13 @@ import java.util.Scanner;
 
 public class TrianglePatternDemo {
     public static void main(String[] args) {
-        System.out.println("Enter a number");
+        TrianglePattern pattern = new TrianglePattern();
+        System.out.println("Enter three numbers :");
         Scanner scanner = new Scanner(System.in);
-        TrianglePattern.displayPattern(scanner.nextInt());
+
+        for (int i = 0; i < 3; i++) {
+            pattern.displayPattern(scanner.nextInt());
+        }
+
     }
 }
