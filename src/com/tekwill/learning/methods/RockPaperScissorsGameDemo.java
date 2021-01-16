@@ -7,10 +7,10 @@ public class RockPaperScissorsGameDemo {
 
         Scanner scanner = new Scanner(System.in);
         RockPaperScissorsGame game = new RockPaperScissorsGame();
-        boolean correctAnswer = false;
+        boolean winner = false;
         System.out.println("Hello, welcome to the game. Enjoy it!");
 
-        while (!correctAnswer) {
+        while (!winner) {
             System.out.print("Enter your choice 'rock', 'paper' or 'scissors' :");
             String userChoice = scanner.nextLine();
             String computerChoice = game.computerChoice();
@@ -20,7 +20,7 @@ public class RockPaperScissorsGameDemo {
 
             } else {
                 game.selectWinner(computerChoice, userChoice);
-                correctAnswer = true;
+                winner = true;
             }
         }
     }
