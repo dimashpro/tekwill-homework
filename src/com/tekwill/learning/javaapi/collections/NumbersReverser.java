@@ -6,16 +6,19 @@ import java.util.Scanner;
 
 public class NumbersReverser {
 
-    public static void main(String[] args) {
+    public static void reverseNumbers(int numberOfIntegers) {
         List<Integer> numbersList = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
-        for (int i = 0; i < 10; i++) {
+        System.out.println("Enter " + numberOfIntegers + " numbers");
+        for (int i = 0; i < numberOfIntegers; i++) {
             int enteredNumber = scanner.nextInt();
             numbersList.add(enteredNumber);
         }
+        System.out.println("Your list is ");
         System.out.println(numbersList);
 
-        for (int i = numbersList.size()-1; i >= 0 ; i--) {
+        System.out.println("This numbers in reversed order");
+        for (int i = numbersList.size() - 1; i >= 0; i--) {
             System.out.print(numbersList.get(i) + " ");
         }
     }
