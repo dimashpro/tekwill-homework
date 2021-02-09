@@ -7,5 +7,6 @@ public class DigitsSumDemo {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a series of single digit numbers with nothing separating them: ");
         String value = scanner.nextLine();
+        DigitsSum.calculateSumOfDigits(value);
     }
 }
