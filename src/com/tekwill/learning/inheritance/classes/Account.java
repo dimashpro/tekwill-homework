@@ -1,6 +1,7 @@
 package com.tekwill.learning.inheritance.classes;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class Account {
     private int id;
@@ -14,13 +15,8 @@ public class Account {
     public Account(int id, double balance) {
         this.id = id;
         this.balance = balance;
-    }
-
-    public Account(int id, double balance, double annualInterestRate, Date dateCreated) {
-        this.id = id;
-        this.balance = balance;
-        this.annualInterestRate = annualInterestRate;
-        this.dateCreated = dateCreated;
+        annualInterestRate = 0.0;
+        dateCreated = new Date();
     }
 
     public int getId() {
@@ -67,4 +63,26 @@ public class Account {
         setBalance(getBalance() + amount);
     }
 
+    @Override
+    public String toString() {
+         return "Account balance is: " + getBalance() +
+                 "\nMonthly interest is: " + getMonthlyInterest() +
+                 "\nCreated date is: " + getDateCreated();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Account account = (Account) o;
+        return id == account.id &&
+                Double.compare(account.balance, balance) == 0 &&
+                Double.compare(account.annualInterestRate, annualInterestRate) == 0 &&
+                Objects.equals(dateCreated, account.dateCreated);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, balance, annualInterestRate, dateCreated);
+    }
 }
